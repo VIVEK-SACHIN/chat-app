@@ -1,0 +1,25 @@
+firebase SDK --
+
+Certain third-party backend services (Like FireBase)offers SDK packages that handle &simplify
+the http communication.
+because configuring ,sending and handling http request manually can be tough espesially when working with a complex services like firebase .
+ we are not ought to use them instead we can use firebase rest Apis 
+(unless and untill we want to build our own backend).
+ 
+to validate credentials i.e to ensure that the user trying to login have valid email password combination
+
+and once the user is authenticated we might want to navigate to a different screen once the user has been authenticated
+
+also we might want to acess certain resources in the backend i.e some data that is only availabe for the authenticated users
+for example in this chat app chats should only be accessible to the logged in users not any anonyms users
+
+therefore after validification backend creates a authentication token(also created when a new user logs in)
+is a String value that can only be verified by the backend.(cryptic and random looking)created using certain algorithm that actually ensures that String decpite looking random is not random and can be verified by it
+
+this token or the key is sent to the front end and is stored in the client device .
+this token is attached by every request sent by frontend .
+
+ 
+
+
+
